@@ -64,7 +64,7 @@
   font-family: 'Poppins', sans-serif;
 }
 .navbar .logo a span{
-  color: crimson;
+  color: yellow;
 }
 
 .icon{
@@ -80,8 +80,19 @@
   top: 20px;
 
 }
+@media(max-width: 340px){
+  .home .max-width{
+    margin-right: 12px;
+    padding: 0px 10px;
+  }
+}
 
 @media (max-width : 868px) {
+  .home .max-width{
+    margin-left: 0px;
+    padding: 0px 10px;
+  }
+
   .body.disbaledScroll{
     overflow: hidden;
   }
@@ -120,33 +131,40 @@
 
 /*Home section styling*/
 .home{
-  background: url('grass.jpg') no-repeat;
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  background-color: blueviolet;
   height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  min-height: 500px;
+}
+.max-width{
+  max-width: 1300px;
+  padding: 0px 80px;
+  margin: auto;
 }
 
-/*.home .max-width{
+.home .max-width{
   margin: auto 0 auto 40px;
 }
 
 .home .home-content .text-1{
-  font-size: 27px;
+  font-size: 20px;
 }
 
 .home .home-content .text-2{
-  font-size: 75px;
-  font-weight: 600;
+  font-size: 45px;
+  font-weight: 500;
   margin-left: -4px;
 }
 
 .home .home-content .text-3{
-  font-size: 40px;
+  font-size: 35px;
   margin: 5px 0;
 }
 
 .home .home-content .text-3 span{
-   color: crimson;
+   color: yellow;
    font-weight: 500;
-}*/
+}
 
